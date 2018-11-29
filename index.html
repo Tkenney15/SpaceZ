@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<html>
+<head> 
+<meta charset="UTF-8">
+<title>Space Z</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script-modal.js"></script>
+<link rel='stylesheet' href='bootstrap-4.1.3/css/bootstrap.min.css'>
+<link rel="stylesheet" type="text/css" href="styles-modal.css">
+</head>
+
+<body>
+<!-- ContainerBox -->
+<Div id="container-box">
+
+<!--Section with name and picture. -->
+<div class="jumbotron jumbotron-fluid">
+<div class="container text-center">
+<div id="header">
+<div class="row">
+  <div class="col-sm-8"> Space Z <br />
+  <p id="Descrip"> Interplanetary travel</p> </div> 
+   
+  <div class="col-sm-4"> <img id="headshot" src="https://us.123rf.com/450wm/sudowoodo/sudowoodo1701/sudowoodo170100033/70862643-cartoon-rocket-on-space-background-vector-illustration-simple-flying-spaceship-drawing-.jpg?ver=6"
+						  width="200" height="200">
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--NavBar and Links -->
+<div id="NavLinks">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    
+    <li class="nav-item">
+      <a class="nav-link" href="#" target="_blank">Link 1</a>
+    </li>
+	
+    <li class="nav-item">
+      <a class="nav-link" href="#" target="_blank">Link 2</a>
+    </li>
+	
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+	
+  </ul>
+</nav>
+</div>
+
+<!-- collapsable node body -->
+<!--Accordion 1 --> 
+<button class="accordion">Query 1</button>
+<div class="panel">
+	<p> Query 1 Code</p>
+ 
+</div>
+
+	<!--Accordion 2 -->
+<button class="accordion">Query 2</button>
+<div class="panel">
+	<p> Query 2 code </p>
+</div>
+
+<!--Accordion 3-->
+<button class="accordion">Query 3</button>
+<div class="panel">
+  <p> Query 3 code</p>
+</div>
+
+<!--Accordion 4 -->
+<button class="accordion">Query 4</button>
+<div class="panel">
+  <p> Query 4 code</p>
+</div>
+
+<!--Accordion 5 -->
+<button class="accordion">Query 5</button>
+<div class="panel">
+  <p> Query 5 code</p>
+</div>
+
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
+</script>
+
+
+
+
+
+
+
+</div>
+	
+	
+</div>
+</body>
+</html>
